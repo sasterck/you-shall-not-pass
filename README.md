@@ -11,7 +11,9 @@ N/A
 
 ## Visuals
 
-images\Screenshot (41).png
+![Screenshot of Page](./assets/images/Screenshot%20(41).png)
+
+[Deployed Site] ()
 
 ## Installation
 N/A
