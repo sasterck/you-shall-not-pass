@@ -14,11 +14,10 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 
 // upper case time ---
 
-var blankUpper = [];
 var toUpper = function (x) {
   return x.toUpperCase();
 };
-upperCase = lowerCase.map(toUpper);
+var upperCase = lowerCase.map(toUpper);
 
 // Numbers and special characters
 
