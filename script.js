@@ -92,14 +92,14 @@ function generatePassword() {
   // Empty variable?
   var passwordBlank = [];
   
-  // Loop for random selection
+  // Loop for random selection - loops are weird. 
   for (var i = 0; i < passwordLength; i++) {
     var allChoices = userChoices[Math.floor(Math.random() * userChoices.length)];
     passwordBlank.push(allChoices);
     console.log(allChoices);
   }
 
-  // Join and return the password 
+  // return the password 
   var password = passwordBlank.join("");
   console.log("Your Pasword is: " + password);
   return password;

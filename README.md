@@ -1,5 +1,5 @@
 ## Name
-mod-3
+you-shall-not-pass
 Module 3 Challenge
 Create a password generator
 
@@ -13,8 +13,7 @@ N/A
 
 ![Screenshot of Page](./assets/images/Screenshot%20(41).png)
 
-[Deployed Site] (https://sasterck.github.io/mod-3/)
-
+[Deployed Site] (https://sasterck.github.io/you-shall-not-pass/)
 ## Installation
 N/A
 
