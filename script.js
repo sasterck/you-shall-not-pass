@@ -14,15 +14,12 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 
 // upper case time ---
 
-var toUpper = function (x) {
-  return x.toUpperCase();
-};
-var upperCase = lowerCase.map(toUpper);
+var upperCase = ('A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,X')
 
 // Numbers and special characters
 
 var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-var special = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
+var special = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", " < ", "=", " > ", " ? ", "@", "[", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 
 // Write password to the #password input
 function writePassword() {
@@ -90,48 +87,7 @@ function generatePassword() {
     userChoices = upperCase.concat(numbers, special);
     console.log(userChoices);
   }
-  // 2 true options
-  else if (confirmLower && confirmUpper) {
-    userChoices = lowerCase.concat(upperCase);
-    console.log(userChoices);
-  }
-  else if (confirmLower && confirmNumber) {
-    userChoices = lowerCase.concat(numbers);
-    console.log(userChoices);
-  }
-  else if (confirmLower && confirmSpecial) {
-    userChoices = lowerCase.concat(special);
-    console.log(userChoices);
-  }
-  else if (confirmUpper && confirmNumber) {
-    userChoices = upperCase.concat(numbers);
-    console.log(userChoices);
-  }
-  else if (confirmUpper && confirmSpecial) {
-    userChoices = upperCase.concat(special);
-    console.log(userChoices);
-  }
-  else if (confirmNumber && confirmSpecial) {
-    userChoices = numbers.concat(special);
-    console.log(userChoices);
-  }
-  // 1 true option
-  else if (confirmLower) {
-    userChoices = lowerCase;
-    console.log(userChoices);
-  }
-  else if (confirmUpper) {
-    userChoices = blankUpper.concat(upperCase);
-    console.log(userChoices);
-  }
-  else if (confirmNumber) {
-    userChoices = numbers;
-    console.log(userChoices);
-  }
-  else if (confirmSpecial) {
-    userChoices = special;
-    console.log(userChoices);
-  };
+  
 
   // Empty variable?
   var passwordBlank = [];
